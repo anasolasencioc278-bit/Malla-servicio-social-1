@@ -1,1 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
 
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.semestre {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.semestre h2 {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.ramo {
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.aprobado {
+  background-color: #7b1e3c; /* rojo vino */
+  color: white;
+  text-decoration: line-through;
+}
+
+.no-aprobado {
+  background-color: #800020; /* rojo borgoña */
+  color: white;
+}
+
+.prerequisito {
+  background-color: #800080; /* rojo púrpura */
+  color: white;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.proyecto {
+  background-color: #8B0000; /* granate */
+  color: white;
+}
+
+.practica {
+  background-color: #7c0a02; /* burdeo */
+  color: white;
+}
