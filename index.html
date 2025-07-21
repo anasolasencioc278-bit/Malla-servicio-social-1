@@ -1,15 +1,60 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Malla Servicio Social</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Malla Interactiva - Servicio Social</h1>
-  <div id="malla" class="grid-container">
-    <!-- Aquí van los semestres y ramos (se insertan con JS) -->
-  </div>
-  <script src="script.js"></script>
-</body>
-</html>
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Grand Hotel', cursive;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.malla {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  justify-items: center;
+  padding: 10px;
+}
+
+.ramo {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: 140px;
+  font-size: 1.2em;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.ramo:hover {
+  transform: scale(1.05);
+}
+
+.no-aprobado {
+  background-color: #800020; /* borgoña */
+  color: white;
+}
+
+.aprobado {
+  background-color: #722f37; /* rojo vino */
+  text-decoration: line-through;
+  color: white;
+}
+
+.bloqueado {
+  background-color: #8B2252; /* rojo púrpura */
+  color: white;
+}
+
+.proyecto-titulo {
+  background-color: #800000; /* granate */
+  color: white;
+}
+
+.practica {
+  background-color: #641010; /* burdeo */
+  color: white;
+}
