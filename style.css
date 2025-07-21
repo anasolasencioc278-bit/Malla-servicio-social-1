@@ -1,65 +1,60 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: black;
+  color: white;
+  font-family: 'Grand Hotel', cursive;
+  text-align: center;
   padding: 20px;
 }
 
 h1 {
-  text-align: center;
-  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 30px;
 }
 
-.grid-container {
+.malla {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.semestre {
-  background: #fff;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.semestre h2 {
-  font-size: 1.1em;
-  margin-bottom: 10px;
-  color: #444;
+  gap: 15px;
+  justify-items: center;
+  padding: 10px;
 }
 
 .ramo {
-  padding: 8px;
-  margin: 5px 0;
-  border-radius: 6px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: 140px;
+  font-size: 1.2em;
+  transition: transform 0.3s;
   cursor: pointer;
-  font-size: 0.9em;
 }
 
-.aprobado {
-  background-color: #7b1e3c; /* rojo vino */
-  color: white;
-  text-decoration: line-through;
+.ramo:hover {
+  transform: scale(1.05);
 }
 
 .no-aprobado {
-  background-color: #800020; /* rojo borgoña */
+  background-color: #800020; /* borgoña */
   color: white;
 }
 
-.prerequisito {
-  background-color: #800080; /* rojo púrpura */
+.aprobado {
+  background-color: #722f37; /* rojo vino */
+  text-decoration: line-through;
   color: white;
-  cursor: not-allowed;
-  opacity: 0.6;
 }
 
-.proyecto {
-  background-color: #8B0000; /* granate */
+.bloqueado {
+  background-color: #8B2252; /* rojo púrpura */
+  color: white;
+}
+
+.proyecto-titulo {
+  background-color: #800000; /* granate */
   color: white;
 }
 
 .practica {
-  background-color: #7c0a02; /* burdeo */
+  background-color: #641010; /* burdeo */
   color: white;
 }
